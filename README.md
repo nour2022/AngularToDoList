@@ -1,6 +1,17 @@
 # ToDoList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+Developed a dynamic To-Do List application utilizing Angular 18, showcasing modern front-end development practices. The app features a user-friendly interface that allows users to create, edit, and delete tasks effortlessly. Instead of traditional APIs, the application leverages a JSON for data storage and retrieval, ensuring fast access and efficient data handling.
+
+Key features include:
+
+Task management functionalities such as adding, editing, and deleting tasks.
+
+Clear separation of completed and pending tasks, enhancing usability.
+
+Real-time updates to the task list with immediate visual feedback on user actions.
+
+Responsive design for optimal viewing on various devices.
 
 ## Development server
 
