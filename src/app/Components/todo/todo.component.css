@@ -1,0 +1,140 @@
+/* ToDo List CSS */
+
+/* General */
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+
+.body1 {
+  font-family: 'Rajdhani', sans-serif;
+  padding-bottom: 90px;
+  font-size: large;
+  background: #ffffff; /* Set background color to white */
+}
+
+.input-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.input-section input {
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  width: 250px;
+  background: #fff;
+  border-bottom: 2px solid #e18284;
+}
+
+.input-section input:focus {
+  outline: none;
+  border-bottom: 2px solid #D24D57;
+  box-shadow: 0 0 5px rgba(210, 77, 87, 0.5);
+}
+
+.btn-add {
+  background: #e18284;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-add:hover {
+  background: #D24D57;
+  transform: scale(1.05);
+}
+
+/* Header */
+.todo-header {
+  padding: 10px;
+  text-align: center;
+  
+ 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin: 20px 20%;
+}
+.todo-text{
+  color: #D24D57;
+  border-bottom: 1px solid #D24D57; 
+}
+.Done-text{
+  color: #bbda0b;
+  border-bottom: 1px solid #bbda0b; 
+}
+
+/* Entry List */
+#todo-entry-list,
+#todo-entry-list-done {
+  margin: 0;
+  list-style-type: none;
+ 
+  padding: 0;
+}
+
+#todo-entry-list li,
+#todo-entry-list-done li {
+  background: #fff;
+  color: #535252;
+  border-bottom: 1px solid #efefef;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  padding-left: 400px ; /* Center list items */
+  padding-right: 200px;
+  width: 90%; /* Set width for list items */
+}
+
+#todo-entry-list li:hover,
+#todo-entry-list-done li:hover {
+  background: #f0f0f0;
+  transform: scale(1.02);
+}
+
+/* Button Styles */
+.btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 5px; /* Minimized space between title and buttons */
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.btn:hover {
+  color: #D24D57;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+}
+
+/* Empty messages */
+#todo-entry-list:empty:after {
+  content: 'No tasks yet!';
+}
+
+#todo-entry-list-done:empty:after {
+  content: 'No tasks completed!';
+}
+
+#todo-entry-list:after,
+#todo-entry-list-done:after {
+  display: block;
+  width: 100%;
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
+}
